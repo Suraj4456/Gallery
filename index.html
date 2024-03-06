@@ -15,20 +15,27 @@
   body{
     width: 100vw;
     max-height: auto;
-    background-color: white ;
+    background-color: black ;
     }
 
-  h1{
+  #top{
     position: sticky;
     top: 0;
     width: 100vw;
-    height:10vh;
+    height:11vh;
     color: white ;
     background-color: black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     letter-spacing: 1vw;
+  }
+  #line{
+    width:60vw;
+    height: .2vh;
+    background-color: white;
+    margin-bottom:3vw;
   }
   #gallery{
     box-sizing: border-box;
@@ -40,19 +47,23 @@
     width:100vw;
   }
   .img{
-    width: 90vw;
-    height: 100vh;
+    width: 100vw;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1vw;
     overflow: hidden;
+    background-color:black;
+    margin-top:1vw;
+    border: .5vw solid red;
     }
     img{
-      height: 65vh;
+      height: 75vh;
       width:auto;
       object-fit: contain;
+      margin-top: -3vw;
+     
     }
     .img a{
      padding: 3vw;
@@ -63,14 +74,17 @@
       background-color: greenyellow;
       border-radius: 2vw;
     }
- 
+
   </style>
-  
+
 
 </head>
 
 <body>
+  <div id="top">
   <h1><i class="fa-solid fa-image"></i>Gallery</h1>
+    <div id="line"></div>
+  </div>
   <br>
   <div id="gallery">
 
@@ -83,20 +97,20 @@
       <img src="Punu02.jpg">
        <a href="Punu02.jpg" download><button>Download</button></a>
     </div>
-    
-    
+
+
     <div class="img">
       <img src="Punu03.jpg">
        <a href="Punu03.jpg" download><button>Download</button></a>
     </div>
-       
-       
+
+
     <div class="img">
       <img src="Punu04.jpg">
        <a href="Punu04.jpg" download><button>Download</button></a>
     </div>
-    
-    
+
+
     <div class="img">
       <img src="Punu05.jpg">
        <a href="Punu05.jpg" download><button>Download</button></a>
